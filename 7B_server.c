@@ -1,19 +1,10 @@
-/*
-
-Title: Inter Process Communication
-Problem Statement: B. Inter-process Communication using Shared Memory using System V. Application to demonstrate:
-Client and Server Programs in which server process creates a shared memory segment and writes the
-message to the shared memory segment. Client process reads the message from the shared memory
-segment and displays it to the screen.
-*/
-
 #include <sys/types.h>
 #include <sys/ipc.h>
 #include <sys/shm.h>
 #include <stdio.h>
 #include <stdlib.h>
  
-#define MAXSIZE 27
+#define MAXSIZE     27
  
 void die(char *s)
 {
@@ -55,3 +46,4 @@ int main()
  
     exit(0);
 }
+
